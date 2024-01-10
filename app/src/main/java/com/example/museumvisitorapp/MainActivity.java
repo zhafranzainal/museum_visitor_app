@@ -6,6 +6,8 @@ import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,6 +34,22 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(scaledDrawable);
 
+        Button btnGallery = findViewById(R.id.button_gallery);
+        Button btnTicket = findViewById(R.id.button_ticket);
+        Button btnContact = findViewById(R.id.button_contact);
+
+        btnTicket.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showDialogTicket();
+            }
+        });
+
+    }
+
+    private void showDialogTicket() {
+        TicketDialogFragment ticketDialogFragment = new TicketDialogFragment();
+        ticketDialogFragment.show(getSupportFragmentManager(), "TicketDialogFragment");
     }
 
 }
