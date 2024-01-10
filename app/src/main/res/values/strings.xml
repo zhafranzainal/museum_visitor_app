@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">LembingLegacy</string>
     <string name="museum">Sg. Lembing Museum</string>
-    <string name="welcome_text">Welcome to Sg. Lembing Museum! \n\n An "edutainment" experience awaits you! \n Explore the rich history of tin mining in Sungai Lembing.</string>
+    <string name="welcome_text">Welcome to Sg. Lembing Museum! \n\n An \"edutainment\" experience awaits you! \n Explore the rich history of tin mining in Sungai Lembing.</string>
 </resources>
