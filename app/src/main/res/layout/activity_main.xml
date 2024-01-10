@@ -7,4 +7,19 @@
     android:background="@drawable/bg_app"
     tools:context=".MainActivity">
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/museum" />
+
+    </androidx.cardview.widget.CardView>
+
 </RelativeLayout>
