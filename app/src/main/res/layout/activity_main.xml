@@ -26,16 +26,23 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/museum" />
 
-            <TextView
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:layout_centerInParent="true"
-                android:gravity="center"
-                android:paddingBottom="5dp"
-                android:text="@string/welcome_text"
-                android:textColor="@android:color/white"
-                android:textSize="19sp" />
+                android:background="#80000000"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/welcome_text"
+                    android:textColor="@android:color/white"
+                    android:textSize="19sp" />
+
+            </RelativeLayout>
 
         </RelativeLayout>
 
