@@ -27,7 +27,7 @@ public class SplashActivity extends AppCompatActivity {
         );
 
         // Set duration then keep the final state of the animation
-        scaleAnimation.setDuration(2000);
+        scaleAnimation.setDuration(1000);
         scaleAnimation.setFillAfter(true);
 
         // Apply the scale animation to the ImageView
