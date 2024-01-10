@@ -6,6 +6,8 @@ import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,6 +34,20 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(scaledDrawable);
 
+        Button btnGallery = findViewById(R.id.button_gallery);
+
+        btnGallery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showDialogGallery();
+            }
+        });
+
+    }
+
+    private void showDialogGallery() {
+        GalleryDialogFragment galleryDialogFragment = new GalleryDialogFragment();
+        galleryDialogFragment.show(getSupportFragmentManager(), "GalleryDialogFragment");
     }
 
 }
