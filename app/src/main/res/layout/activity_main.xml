@@ -63,7 +63,8 @@
             android:backgroundTint="@color/dark_gray"
             android:text="@string/button1"
             android:textAllCaps="false"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            android:textSize="19sp" />
 
         <Button
             android:layout_width="match_parent"
@@ -72,7 +73,8 @@
             android:backgroundTint="@color/dark_gray"
             android:text="@string/button2"
             android:textAllCaps="false"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            android:textSize="19sp" />
 
         <Button
             android:layout_width="match_parent"
@@ -81,7 +83,8 @@
             android:backgroundTint="@color/dark_gray"
             android:text="@string/button3"
             android:textAllCaps="false"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            android:textSize="19sp" />
 
     </LinearLayout>
 
