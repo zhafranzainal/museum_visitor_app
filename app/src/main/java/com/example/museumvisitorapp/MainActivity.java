@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Drawable originalDrawable = getDrawable(R.drawable.ic_app_logo);
+        Drawable originalDrawable = getDrawable(R.drawable.ic_logo);
         Bitmap originalBitmap = ((BitmapDrawable) originalDrawable).getBitmap();
 
         // Create a scaled version of the Bitmap
