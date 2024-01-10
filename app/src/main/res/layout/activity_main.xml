@@ -58,33 +58,36 @@
         android:orientation="vertical">
 
         <Button
+            android:id="@+id/button_gallery"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/dark_gray"
             android:drawableLeft="@drawable/ic_gallery"
-            android:text="@string/button1"
+            android:text="@string/button_gallery"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
             android:textSize="19sp" />
 
         <Button
+            android:id="@+id/button_ticket"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:backgroundTint="@color/dark_gray"
             android:drawableLeft="@drawable/ic_ticket"
-            android:text="@string/button2"
+            android:text="@string/button_ticket"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
             android:textSize="19sp" />
 
         <Button
+            android:id="@+id/button_contact"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:backgroundTint="@color/dark_gray"
             android:drawableLeft="@drawable/ic_contact"
-            android:text="@string/button3"
+            android:text="@string/button_contact"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
             android:textSize="19sp" />
