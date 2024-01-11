@@ -1,6 +1,8 @@
 package com.example.museumvisitorapp;
 
 import android.app.Dialog;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -35,7 +37,7 @@ public class ContactDialogFragment extends DialogFragment {
         iconCall.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                
+                initiatePhoneCall();
             }
         });
 
@@ -56,5 +58,10 @@ public class ContactDialogFragment extends DialogFragment {
 
     }
 
+    private void initiatePhoneCall() {
+        String phoneNumber = "+60 09-541 2378";
+        Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + phoneNumber));
+        startActivity(intent);
+    }
 
 }
