@@ -10,6 +10,7 @@ import androidx.fragment.app.DialogFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 public class ContactDialogFragment extends DialogFragment {
 
@@ -26,6 +27,18 @@ public class ContactDialogFragment extends DialogFragment {
                              @Nullable Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_contact_dialog, container, false);
+
+        ImageView iconCall = view.findViewById(R.id.icon_call);
+        ImageView iconEmail = view.findViewById(R.id.icon_email);
+        ImageView iconFacebook = view.findViewById(R.id.icon_facebook);
+
+        iconCall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                
+            }
+        });
+
         return view;
 
     }
