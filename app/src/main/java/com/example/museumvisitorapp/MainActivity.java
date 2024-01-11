@@ -2,6 +2,7 @@ package com.example.museumvisitorapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
@@ -37,6 +38,14 @@ public class MainActivity extends AppCompatActivity {
         Button btnGallery = findViewById(R.id.button_gallery);
         Button btnTicket = findViewById(R.id.button_ticket);
         Button btnContact = findViewById(R.id.button_contact);
+
+        btnGallery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, GalleryActivity.class);
+                startActivity(intent);
+            }
+        });
 
         btnTicket.setOnClickListener(new View.OnClickListener() {
             @Override
