@@ -48,6 +48,13 @@ public class ContactDialogFragment extends DialogFragment {
             }
         });
 
+        iconFacebook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openFacebookPage();
+            }
+        });
+
         return view;
 
     }
@@ -75,6 +82,22 @@ public class ContactDialogFragment extends DialogFragment {
         String emailAddress = "pr.muziumsungailembing@gmail.com";
         Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", emailAddress, null));
         startActivity(Intent.createChooser(intent, "Choose an Email client"));
+    }
+
+    private void openFacebookPage() {
+
+        String facebookPageId = "sungailembingmuseum";
+
+        try {
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("fb://page/" + facebookPageId));
+            startActivity(intent);
+        } catch (Exception e) {
+            // If Facebook app is not installed, open the page in a web browser
+            String facebookUrl = "https://www.facebook.com/" + facebookPageId;
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(facebookUrl));
+            startActivity(intent);
+        }
+
     }
 
 }
