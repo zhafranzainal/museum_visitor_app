@@ -41,6 +41,13 @@ public class ContactDialogFragment extends DialogFragment {
             }
         });
 
+        iconEmail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                sendEmail();
+            }
+        });
+
         return view;
 
     }
@@ -62,6 +69,12 @@ public class ContactDialogFragment extends DialogFragment {
         String phoneNumber = "+60 09-541 2378";
         Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + phoneNumber));
         startActivity(intent);
+    }
+
+    private void sendEmail() {
+        String emailAddress = "pr.muziumsungailembing@gmail.com";
+        Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", emailAddress, null));
+        startActivity(Intent.createChooser(intent, "Choose an Email client"));
     }
 
 }
