@@ -45,11 +45,23 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnContact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showDialogContact();
+            }
+        });
+
     }
 
     private void showDialogTicket() {
         TicketDialogFragment ticketDialogFragment = new TicketDialogFragment();
         ticketDialogFragment.show(getSupportFragmentManager(), "TicketDialogFragment");
+    }
+
+    private void showDialogContact() {
+        ContactDialogFragment contactDialogFragment = new ContactDialogFragment();
+        contactDialogFragment.show(getSupportFragmentManager(), "ContactDialogFragment");
     }
 
 }
